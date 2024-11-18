@@ -1,2 +1,2 @@
-# vres
-Vacation Research Experience Topic: Developing Bimanual Teleoperation Device for Dual Robotic Manipulator Arms and Robot Learning
+# BATTLE
+Bimanual Arms for Teleoperation and Training in Learning Environments - B.A.T.T.L.E.
