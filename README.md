@@ -18,7 +18,7 @@ This repository contains the mechanical and software components for a bimanual r
 │   ├── API_Reference.md
 ├── LICENSE
 ├── README.md
-
+```
 
 ## CAD_Files/
 
