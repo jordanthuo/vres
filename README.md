@@ -58,6 +58,7 @@ Comprehensive guides and references:
 
 ```bash
 git clone https://github.com/jordanthuo/vres
+cd vres
 ```
 
 ## Usage
