@@ -27,9 +27,9 @@ This repository provides a modular and scalable framework for bimanual robotic a
 │   ├── Shaft/
 │   ├── Splint_Support/
 │   ├── U_Pin/
-├── Software/
 ├── Documentation/
 │   ├── Setup_Guide.md
+├── Software/
 ├── README.md
 ```
 
@@ -58,6 +58,7 @@ Comprehensive guides and references:
 
 ```bash
 git clone https://github.com/jordanthuo/vres
+cd vres
 ```
 
 ## Usage
