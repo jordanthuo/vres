@@ -2,72 +2,72 @@
 
 ## Project Overview
 
-This repository contains the mechanical and software components for a bimanual robotic arm system, integrating the WidowX arm and the Franka Emika Panda arm. The project aims to explore and implement advanced control mechanisms for collaborative manipulation tasks using these two robotic platforms. The modular design allows for flexibility and customization in hardware and software integration.
+This repository provides a modular and scalable framework for bimanual robotic arm teleoperation. While currently demonstrated with the WidowX 250 S by Trossen Robotics and the Franka Emika Panda arm, the system is designed to support a wide range of robotic platforms. Its architecture enables advanced collaborative manipulation tasks, offering flexibility for customization and integration across various hardware and software setups.
+
+### Features
+
+- **Modular and Scalable Framework**: Designed to be easily adaptible to accommodate future expansions, including additional arms or end-effectors.
+- **Collaborative Manipulation**: Enables bimanual teleoperation for tasks requiring precise coordination between two arms.
+- **Customizable Hardware**: Includes customizable CAD components that can be tailored for specific robotic platforms or applications.
 
 ## Repository Structure
 
 ```plaintext
 ├── CAD_Files/
-│   ├── WidowX_Controller/
-│   ├── FrankaPanda_Controller/
+│   ├── Assembly/
+│   │   ├── WidowX_Controller/
+│   │   ├── FrankaPanda_Controller/
+│   ├── Base/
+│   ├── Connector/
+│   ├── Corner_Adaptor/
+│   ├── Handle/
+│   ├── Hex_Adapter/
+│   ├── Joint_House/
+│   ├── Joints/
+│   ├── Shaft/
+│   ├── Splint_Support/
+│   ├── U_Pin/
 ├── Software/
-│   ├── Control_Scripts/
-│   ├── Simulation_Tools/
 ├── Documentation/
 │   ├── Setup_Guide.md
-│   ├── API_Reference.md
-├── LICENSE
 ├── README.md
 ```
 
-## CAD_Files/
+#### CAD_Files/
 
-Contains the CAD designs for the custom controllers:
+Contains the CAD components for the custom controllers:
 
 - **WidowX_Controller/**: CAD files for the WidowX robotic arm controller.
 - **FrankaPanda_Controller/**: CAD files for the Franka Panda robotic arm controller.
 
-## Software/
+#### Software/
 
 Holds the software scripts and tools:
 
-- **Control_Scripts/**: Python scripts for controlling the bimanual arms.
-- **Simulation_Tools/**: Resources for simulating arm movements and testing scenarios.
-
-## Documentation/
+#### Documentation/
 
 Comprehensive guides and references:
 
-- **Setup_Guide.md**: Step-by-step instructions to set up and run the system.
-- **API_Reference.md**: Detailed documentation of the software API.
+- **Setup_Guide.md**: Step-by-step instructions, assembly guidance, and parts list for setting up the system.
 
 ## Getting Started
 
-### Prerequisites
+### Installation
 
-- CAD software (e.g., Fusion 360, SolidWorks) to view and modify the designs.
-- Python 3.8 or higher.
-- ROS (Robot Operating System) for arm control.
-- Simulation tools (e.g., Gazebo, RViz).
-
-## Installation
-
-### Clone the repository:
+#### Clone the repository:
 
 ```bash
-git clone https://github.com/your-repo-url
-cd bimanual-robot-arm
-
-- Set up the ROS workspace and dependencies as outlined in **Documentation/Setup_Guide.md**.
-- Load the CAD files into your preferred CAD software for customization or review.
+git clone https://github.com/jordanthuo/vres
+```
 
 ## Usage
 
-1. Follow the setup guide to configure hardware and software.
-2. Use scripts in **Control_Scripts/** to test and control the bimanual system.
-3. Simulate tasks using tools in **Simulation_Tools/** before deploying them on physical hardware.
+1. Follow the setup guide **Documentation/Setup_Guide.md** to configure hardware and software.
+2. Load the CAD files within **CAD_Files/Assembly/.../** into your preferred CAD software for customization or review. Alternatively, import the files into your preferred slicer for 3D printing.
+## Acknowledgments
 
-## Contribution
+This project was made possible with the support of the QUT Centre of Robotics. Special thanks to my supervisor DR Krishan Rana for providing guidance and mentorship throughout this project.
 
-We welcome contributions to improve the project! Feel free to fork the repository, make changes, and submit a pull request. For major changes, please open an issue first to discuss the proposal.
+## Contact
 
+For questions or support, please reach out to jthuo1@outlook.com
